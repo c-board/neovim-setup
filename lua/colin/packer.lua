@@ -14,10 +14,19 @@ return require('packer').startup(function(use)
 	  requires = { {'nvim-lua/plenary.nvim'} }
   }
 
+  use({
+	"Pocco81/true-zen.nvim",
+	config = function()
+		 require("true-zen").setup {
+			-- your config goes here
+			-- or just leave it empty :)
+		 }
+	end,
+})
 
-  use({ 'rose-pine/neovim', as = 'rose-pine' })
-  -- use ({"olimorris/onedarkpro.nvim", as = 'one-dark'})
-  vim.cmd('colorscheme rose-pine')
+  -- use({ 'rose-pine/neovim', as = 'rose-pine' })
+  use ({ 'marko-cerovac/material.nvim' })  
+  vim.cmd('colorscheme material')
 
   use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
   use('theprimeagen/harpoon')
