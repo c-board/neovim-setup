@@ -50,9 +50,4 @@ vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><
 -- make current file executable
 vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true })
 
-vim.api.nvim_set_keymap("n", "<leader>g", ":Goyo<CR>", {
-  noremap = true,
-  silent = true,
-})
-
 api.nvim_set_keymap("n", "<leader>za", ":TZAtaraxis<CR>", {})
