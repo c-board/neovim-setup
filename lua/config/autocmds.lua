@@ -4,7 +4,13 @@
 
 local api = vim.api
 
--- run a command to start pocco81/true-zen.nvim on startup
-api.nvim_command('TZAtaraxis')
+-- explorer view by default
 api.nvim_command('Ex')
+
+vim.defer_fn(function()
     
+    -- run pocco81/true-zen.nvim on startup
+    api.nvim_command('TZAtaraxis')
+    vim.cmd("echo 'aaaaw yis'")
+
+end, 0)
