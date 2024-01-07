@@ -11,3 +11,5 @@ local opt = vim.opt
 opt.wrap = true
 
 vim.opt.cursorlineopt = 'number'
+
+vim.g.netrw_banner = 0
