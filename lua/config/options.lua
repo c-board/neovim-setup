@@ -10,3 +10,4 @@ api.nvim_set_var('neotree_auto_open', 0)
 local opt = vim.opt
 opt.wrap = true
 
+vim.opt.cursorlineopt = 'number'

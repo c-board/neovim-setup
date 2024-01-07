@@ -5,12 +5,12 @@
 local api = vim.api
 
 -- explorer view by default
-api.nvim_command('Ex')
+-- api.nvim_command('Ex')
 
-vim.defer_fn(function()
+-- vim.defer_fn(function()
     
-    -- run pocco81/true-zen.nvim on startup
-    api.nvim_command('TZAtaraxis')
-    vim.cmd("echo 'aaaaw yis'")
+--     -- run pocco81/true-zen.nvim on startup
+--     api.nvim_command('TZAtaraxis')
+--     vim.cmd("echo 'aaaaw yis'")
 
-end, 0)
+-- end, 0)
